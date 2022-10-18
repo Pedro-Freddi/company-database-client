@@ -12,8 +12,14 @@ The /src/company folder contain the classes that make up the application. A quic
 
 - *DatabaseManager*: provides the connection object used to communicate with the database server.
 - *Employee*: Java bean that models an employee object.
-- *EmployeeDAO*: the employee data access object (DAO) provides the methods to perform create, read, update and delete (CRUD) operations on the employee records.
+- *EmployeeDAO*: data access object (DAO) that provides methods to perform create, read, update and delete (CRUD) operations on employee records.
+- *UserInterface*: contains methods to provide the interaction with the user through the system's out stream.
+- *App*: contains the main method used to start the application.
 
 The /test folder contains test classes for each of the methods of the EmployeeDAO class.
 
 And finally in the /jdbc/study folder there are annotations and example classes written while studying JDBC classes and features.
+
+## Screenshots
+<img src="./docs/screenshot1.png" width=500px />
+<img src="./docs/screenshot2.png" width=500px />
