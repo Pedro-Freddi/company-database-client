@@ -11,11 +11,7 @@ public class EmployeeGetByIdTest {
 		
 		if (employee != null) {
 			
-			System.out.println("Id: " + employee.getId());
-			System.out.println("Name: " + employee.getName());
-			System.out.println("Email: " + employee.getEmail());
-			System.out.println("Salary: " + employee.getSalary());
-			System.out.println("Hire Date: " + employee.getHireDate().getTime() + "\n");
+			System.out.println(employee);
 			
 		} else {
 			

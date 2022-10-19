@@ -1,10 +1,13 @@
 package company.bean;
 
+import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class Employee {
+public class Employee implements Serializable {
 
 	// Attributes
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String name;
 	private String email;
@@ -65,6 +68,21 @@ public class Employee {
 	
 	public void setHireDate(Calendar hireDate) {
 		this.hireDate = hireDate;
+	}
+	
+	// Overwritten toString method from Serializable interface
+	@Override
+	public String toString() {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD");
+		
+		return "Employee [id = " + id
+				+ ", name = " + name
+				+ ", email = " + email
+				+ ", salary = " + salary
+				+ ", hire date = " + sdf.format(hireDate.getTime())
+				+ "]";
+		
 	}
 	
 }
