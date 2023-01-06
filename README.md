@@ -4,7 +4,7 @@ This is a small application written in Java for study and practice purposes.
 
 In the context of a company database that holds employee data, the application consists of a client to access and manipulate that data through a text interface.
 
-The RDBMS used in this project is PostgreSQL. The `db-setup.sql` file in the root directory can be run in the psql application to setup the database and populate it with a few records.
+The Relational Database Management System (RDBMS) used in this project is PostgreSQL. The `db-setup.sql` file in the root directory can be run in the psql application to setup the database and populate it with a few records.
 
 The `/lib` folder contains the PostgreSQL's Java Database Connectivity Driver (JDBC) used to connect to the database server.
 
